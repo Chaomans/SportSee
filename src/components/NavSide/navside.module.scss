@@ -1,0 +1,22 @@
+.navside {
+  width: 117px;
+  height: 100%;
+  background-color: $nav-bgc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 10%;
+
+  .buttonIcons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .copyright {
+    color: #fff;
+    writing-mode: vertical-rl;
+    transform: scale(-1);
+  }
+}

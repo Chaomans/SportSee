@@ -1,0 +1,38 @@
+.navtop {
+  display: flex;
+  height: $navtop-height;
+  align-items: center;
+  padding: 0 20px;
+  background-color: $nav-bgc;
+  width: 100%;
+  justify-content: space-between;
+  box-shadow: 0 4px 4px 0 $navtop-shadow;
+
+  .logo {
+    width: 178px;
+    min-width: 178px;
+    height: 60.93px;
+
+    .img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  .nav {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+
+    .navlink {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 24px;
+      color: $navlink-color;
+      text-decoration: none;
+    }
+  }
+}

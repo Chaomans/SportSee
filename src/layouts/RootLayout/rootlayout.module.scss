@@ -1,0 +1,9 @@
+.rootlayout {
+  height: calc(100vh - $navtop-height);
+  width: 100%;
+  .content {
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+}

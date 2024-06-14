@@ -5,12 +5,12 @@ const NavSide = () => {
   return (
     <div className={styles.navside}>
       <div className={styles.buttonIcons}>
-        <ButtonIcon name="sport" icon="image" />
-        <ButtonIcon name="sport" icon="image" />
-        <ButtonIcon name="sport" icon="image" />
-        <ButtonIcon name="sport" icon="image" />
+        <ButtonIcon name="rest" icon="icon_rest.svg" />
+        <ButtonIcon name="swim" icon="icon_swim.svg" />
+        <ButtonIcon name="bike" icon="icon_bike.svg" />
+        <ButtonIcon name="weight" icon="icon_weight.svg" />
       </div>
-      <div className={styles.copyright}></div>
+      <p className={styles.copyright}>Copyright, SportSee 2020</p>
     </div>
   );
 };
