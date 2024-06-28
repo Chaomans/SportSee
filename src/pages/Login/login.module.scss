@@ -1,0 +1,37 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  gap: 40px;
+
+  .h1 {
+    font-size: 48px;
+    font-weight: 500;
+  }
+
+  .users {
+    display: flex;
+    gap: 50px;
+
+    .link {
+      text-decoration: none;
+      font-size: 35px;
+      font-weight: 400;
+      border: 2px solid $sportsee-red-dark;
+      padding: 5px 8px;
+      border-radius: 10px;
+      background-color: $sportsee-red-dark;
+      color: #f3f3f3;
+
+      &:hover,
+      &:active {
+        background-color: $sportsee-red;
+        border: 2px solid $sportsee-red;
+        color: #f3f3f3;
+      }
+    }
+  }
+}
