@@ -45,6 +45,8 @@
     .performance {
       grid-area: perf;
       border-radius: $display-radius;
+      background-color: #282d30;
+      padding: 7px;
     }
     .score {
       grid-area: score;

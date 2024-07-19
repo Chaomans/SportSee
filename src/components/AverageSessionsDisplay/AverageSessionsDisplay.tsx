@@ -1,6 +1,4 @@
 import {
-  Area,
-  AreaChart,
   Line,
   LineChart,
   ReferenceArea,
@@ -10,11 +8,7 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import {
-  DataContextType,
-  averageSession,
-  averageSessions,
-} from "../../utils/types";
+import { DataContextType, averageSessions } from "../../utils/types";
 import {
   NameType,
   ValueType,
@@ -66,6 +60,13 @@ const AverageSessionsDisplay = ({ average }: AverageSessionsDisplayProps) => {
             }}
             onMouseLeave={() => setActiveValue(6)}
           >
+            <text y={20} textAnchor="left" dominantBaseline="central">
+              <tspan className={styles.title}>Durée moyenne des</tspan>
+            </text>
+            <text y={40} textAnchor="left" dominantBaseline="central">
+              <tspan className={styles.title}>sessions</tspan>
+            </text>
+
             <XAxis
               dataKey="day"
               tickLine={false}

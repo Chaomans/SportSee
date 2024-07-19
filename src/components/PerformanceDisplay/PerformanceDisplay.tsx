@@ -7,6 +7,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import { DataContextType, performance } from "../../utils/types";
+import styles from "./PerformanceDisplay.module.scss";
 
 type PerformanceDisplayProps = {
   performance: DataContextType<performance>;
@@ -15,12 +16,12 @@ type PerformanceDisplayProps = {
 const PerformanceDisplay = ({ performance }: PerformanceDisplayProps) => {
   const { data, isPending, error } = performance;
   const kindListFR: { [key: number]: string } = {
-    1: "cardio",
-    2: "energie",
-    3: "endurance",
-    4: "force",
-    5: "vitesse",
-    6: "intensité",
+    1: "Cardio",
+    2: "Énergie",
+    3: "Endurance",
+    4: "Force",
+    5: "Vitesse",
+    6: "Intensité",
   };
   return (
     <>
@@ -31,21 +32,25 @@ const PerformanceDisplay = ({ performance }: PerformanceDisplayProps) => {
           <RadarChart
             cx="50%"
             cy="50%"
-            outerRadius="80%"
-            data={data.data.map((elem) => ({
-              value: elem.value,
-              kind: kindListFR[elem.kind],
-            }))}
+            outerRadius="75%"
+            data={data.data
+              .map((elem) => ({
+                value: elem.value,
+                kind: kindListFR[elem.kind],
+              }))
+              .reverse()}
           >
-            <PolarGrid />
-            <PolarAngleAxis dataKey="kind" tickLine={false} />
-            <PolarRadiusAxis />
-            <Radar
-              dataKey="value"
-              stroke="#FF0101B2"
-              fill="#FF0101B2"
-              fillOpacity={0.6}
+            <PolarGrid strokeWidth={1.5} />
+            <PolarAngleAxis
+              dataKey="kind"
+              tickLine={false}
+              axisLine={false}
+              tick={{ fill: "#fff" }}
+              tickSize={15}
+              fontSize={14}
             />
+            <PolarRadiusAxis tick={false} axisLine={false} />
+            <Radar dataKey="value" fill="#FF0101" fillOpacity={0.6} />
           </RadarChart>
         </ResponsiveContainer>
       )}
