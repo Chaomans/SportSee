@@ -1,18 +1,16 @@
 export type user = {
-  data: {
-    id: number;
-    userInfos: {
-      firstName: string;
-      lastName: string;
-      age: number;
-    };
-    score: number;
-    keyData: {
-      calorieCount: number;
-      proteinCount: number;
-      carbohydrateCount: number;
-      lipidCount: number;
-    };
+  id: number;
+  userInfos: {
+    firstName: string;
+    lastName: string;
+    age: number;
+  };
+  score: number;
+  keyData: {
+    calorieCount: number;
+    proteinCount: number;
+    carbohydrateCount: number;
+    lipidCount: number;
   };
 };
 
@@ -31,11 +29,9 @@ type kindValue = {
 };
 
 export type performance = {
-  data: {
-    userId: number;
-    kind: kindList;
-    data: kindValue[];
-  };
+  userId: number;
+  kind: kindList;
+  data: kindValue[];
 };
 
 type session = {
@@ -45,22 +41,18 @@ type session = {
 };
 
 export type activity = {
-  data: {
-    userId: number;
-    sessions: session[];
-  };
+  userId: number;
+  sessions: session[];
 };
 
-type averageSession = {
+export type averageSession = {
   day: number;
   sessionLength: number;
 };
 
 export type averageSessions = {
-  data: {
-    userId: number;
-    sessions: averageSession[];
-  };
+  userId: number;
+  sessions: averageSession[];
 };
 
 export type DataContextType<T> = {

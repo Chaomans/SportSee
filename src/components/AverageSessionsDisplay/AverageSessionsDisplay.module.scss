@@ -1,0 +1,13 @@
+.customTooltip {
+  background-color: #fff;
+  font-weight: 300;
+  font-size: 12px;
+  padding: 10px;
+  display: flex;
+  width: max-content;
+  height: max-content;
+
+  .value {
+    padding: 4px 2px;
+  }
+}

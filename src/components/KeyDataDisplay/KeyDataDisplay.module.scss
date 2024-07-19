@@ -1,11 +1,12 @@
 .keyDataDisplay {
-  width: 258px;
-  height: 124px;
+  width: clamp(220px, 100%, 258px);
+  height: clamp(80px, 20%, 124px);
   display: flex;
-  background-color: #fbfbfb;
-  padding: 30px;
-  border-radius: 5px;
-  gap: 30px;
+  background-color: $bgc-grey;
+  padding: 10%;
+  border-radius: $display-radius;
+  gap: 12%;
+  align-items: center;
 
   .imgDiv {
     width: 60px;

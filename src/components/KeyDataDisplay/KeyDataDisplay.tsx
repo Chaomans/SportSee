@@ -17,7 +17,7 @@ const KeyDataDisplay = ({ name, value }: KeyDataDisplayProps) => {
         />
       </div>
       <div className={styles.category}>
-        <p className={styles.value}>{value.toString() + unit}</p>
+        <p className={styles.value}>{value.toString() + " " + unit}</p>
         <p className={styles.name}>{name}</p>
       </div>
     </div>

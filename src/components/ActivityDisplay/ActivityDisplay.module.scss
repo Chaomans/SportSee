@@ -1,0 +1,33 @@
+.customTooltip {
+  background-color: #e60000;
+  color: #fff;
+  font-weight: 300;
+  font-size: 12px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: max-content;
+  height: max-content;
+
+  .value {
+    padding: 12px 2px;
+  }
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.legend {
+  display: flex;
+  justify-content: space-between;
+}
+
+.legendTitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: #74798c;
+}
