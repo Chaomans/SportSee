@@ -45,13 +45,17 @@
     .performance {
       grid-area: perf;
       border-radius: $display-radius;
-      background-color: #282d30;
+      background-color: $sportsee-dark-grey;
       padding: 7px;
     }
     .score {
       grid-area: score;
       background-color: $bgc-grey;
       border-radius: $display-radius;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
     }
     .KeyData {
       grid-area: key;

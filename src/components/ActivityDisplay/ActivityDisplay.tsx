@@ -105,7 +105,7 @@ const ActivityDisplay = ({ activity }: ActivityDisplayProps) => {
               margin={{ right: 200 }}
               iconType="circle"
               iconSize={9}
-              formatter={(value, entry, index) => (
+              formatter={(value) => (
                 <span className={styles.legendTitle}>{value}</span>
               )}
             />

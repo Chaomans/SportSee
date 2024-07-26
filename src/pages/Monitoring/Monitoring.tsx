@@ -6,6 +6,7 @@ import ActivityDisplay from "../../components/ActivityDisplay/ActivityDisplay";
 import AverageSessionsDisplay from "../../components/AverageSessionsDisplay/AverageSessionsDisplay";
 import KeyDataDisplay from "../../components/KeyDataDisplay/KeyDataDisplay";
 import PerformanceDisplay from "../../components/PerformanceDisplay/PerformanceDisplay";
+import ScoreDisplay from "../../components/ScoreDisplay/ScoreDisplay";
 import styles from "./monitoring.module.scss";
 
 const Monitoring = () => {
@@ -39,7 +40,11 @@ const Monitoring = () => {
         <div className={styles.average}>
           <AverageSessionsDisplay average={average} />
         </div>
-        <div className={styles.score}>score</div>
+        {user.data && (
+          <div className={styles.score}>
+            <ScoreDisplay score={user.data.score ?? user.data.todayScore} />
+          </div>
+        )}
         <div className={styles.KeyData}>
           {user.data && (
             <>

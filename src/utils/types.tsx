@@ -6,6 +6,7 @@ export type user = {
     age: number;
   };
   score: number;
+  todayScore: number;
   keyData: {
     calorieCount: number;
     proteinCount: number;
