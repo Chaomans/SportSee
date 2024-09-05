@@ -1,3 +1,4 @@
+import { Navigate } from "react-router-dom";
 import { useActivity } from "../../Providers/ActivityProvider";
 import { useAverageSessions } from "../../Providers/AverageSessionsProvider";
 import { usePerformance } from "../../Providers/PerformanceProvider";
@@ -17,9 +18,9 @@ const Monitoring = () => {
 
   return (
     <div className={styles.monitoring}>
-      <div className={styles.greets}>
-        {user.data && (
-          <>
+      {user.data && (
+        <>
+          <div className={styles.greets}>
             <h1>
               Bonjour{" "}
               <span className={styles.firstname}>
@@ -27,27 +28,23 @@ const Monitoring = () => {
               </span>
             </h1>
             <p>Félicitation ! Vous avez explosé vos objectifs hier 👏</p>
-          </>
-        )}
-      </div>
-      <div className={styles.data}>
-        <div className={styles.activity}>
-          <ActivityDisplay activity={activity} />
-        </div>
-        <div className={styles.performance}>
-          <PerformanceDisplay performance={performance} />
-        </div>
-        <div className={styles.average}>
-          <AverageSessionsDisplay average={average} />
-        </div>
-        {user.data && (
-          <div className={styles.score}>
-            <ScoreDisplay score={user.data.score ?? user.data.todayScore} />
           </div>
-        )}
-        <div className={styles.KeyData}>
-          {user.data && (
-            <>
+          <div className={styles.data}>
+            <div className={styles.activity}>
+              <ActivityDisplay activity={activity} />
+            </div>
+            <div className={styles.performance}>
+              <PerformanceDisplay performance={performance} />
+            </div>
+            <div className={styles.average}>
+              <AverageSessionsDisplay average={average} />
+            </div>
+            {user.data && (
+              <div className={styles.score}>
+                <ScoreDisplay score={user.data.score ?? user.data.todayScore} />
+              </div>
+            )}
+            <div className={styles.KeyData}>
               <KeyDataDisplay
                 name="calories"
                 value={user.data.keyData.calorieCount}
@@ -64,10 +61,11 @@ const Monitoring = () => {
                 name="lipides"
                 value={user.data.keyData.lipidCount}
               />
-            </>
-          )}
-        </div>
-      </div>
+            </div>
+          </div>
+        </>
+      )}
+      {user.error !== null && <Navigate to={"/NotFound"} replace />}
     </div>
   );
 };

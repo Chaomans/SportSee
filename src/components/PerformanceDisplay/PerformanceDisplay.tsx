@@ -7,7 +7,6 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import { DataContextType, performance } from "../../utils/types";
-import styles from "./PerformanceDisplay.module.scss";
 
 type PerformanceDisplayProps = {
   performance: DataContextType<performance>;

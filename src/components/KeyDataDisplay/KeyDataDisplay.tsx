@@ -12,7 +12,7 @@ const KeyDataDisplay = ({ name, value }: KeyDataDisplayProps) => {
       <div className={styles.imgDiv}>
         <img
           className={styles.img}
-          src={`/assets/${name}.svg`}
+          src={`../assets/${name}.svg`}
           alt={`Imaging ${name}`}
         />
       </div>
