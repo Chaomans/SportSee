@@ -15,6 +15,23 @@ export type user = {
   };
 };
 
+export type userMock = {
+  id: number;
+  userInfos: {
+    firstName: string;
+    lastName: string;
+    age: number;
+  };
+  score?: number;
+  todayScore?: number;
+  keyData: {
+    calorieCount: number;
+    proteinCount: number;
+    carbohydrateCount: number;
+    lipidCount: number;
+  };
+};
+
 type kindList = {
   1: "cardio";
   2: "energy";

@@ -14,29 +14,6 @@ type UserProviderProps = {
 };
 
 const UserProvider = ({ children }: UserProviderProps) => {
-  // const { id } = useParams();
-  // const [data, setData] = useState<user | null>(null);
-  // const [isPending, setIsPending] = useState(true);
-  // const [error, setError] = useState(null);
-
-  // useEffect(() => {
-  //   if (id) {
-  //     const { data, isPending, error } = useFetch<user>(
-  //       `http://localhost:3000/user/` + id
-  //     );
-  //     setData(data);
-  //     setIsPending(isPending);
-  //     setError(error);
-  //   }
-  // }, [id]);
-
-  // if (!id)
-  //   return (
-  //     <DataContext.Provider value={{ data }}>{children}</DataContext.Provider>
-  //   );
-  // if (isPending) return <p>Loading...{children} </p>;
-  // if (error) return <p>Error fetching user</p>;
-
   const { id } = useParams();
 
   const { data, isPending, error } = useFetch<user>(
