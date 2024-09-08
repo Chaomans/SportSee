@@ -7,10 +7,10 @@ const Login = () => {
       <h1 className={styles.h1}>Vous êtes...</h1>
       <div className={styles.users}>
         <NavLink to="/monitoring/12" className={styles.link}>
-          Karl
+          {JSON.parse(import.meta.env.VITE_USE_MOCK) ? "Mars" : "Karl"}
         </NavLink>
         <NavLink to="/monitoring/18" className={styles.link}>
-          Cecilia
+          {JSON.parse(import.meta.env.VITE_USE_MOCK) ? "Paprika" : "Cecilia"}
         </NavLink>
       </div>
     </div>

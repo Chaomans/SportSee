@@ -10,33 +10,33 @@ export const data: {
     {
       id: 18,
       userInfos: {
-        firstName: "Cecilia",
-        lastName: "Ratorez",
+        firstName: "Paprika",
+        lastName: "Romarine",
         age: 34
       },
-      score: 0.3,
-      todayScore: 0.3,
+      score: 0.7,
+      todayScore: 0.7,
       keyData: {
-        calorieCount: 2500,
-        proteinCount: 90,
-        carbohydrateCount: 150,
-        lipidCount: 120
+        calorieCount: 2600,
+        proteinCount: 100,
+        carbohydrateCount: 120,
+        lipidCount: 150
       }
     },
     {
       id: 12,
       userInfos: {
-        firstName: "Cecilia",
-        lastName: "Ratorez",
-        age: 34
+        firstName: "Mars",
+        lastName: "Upiaux",
+        age: 45
       },
-      score: 0.3,
-      todayScore: 0.3,
+      score: 0.24,
+      todayScore: 0.24,
       keyData: {
-        calorieCount: 2500,
+        calorieCount: 1700,
         proteinCount: 90,
-        carbohydrateCount: 150,
-        lipidCount: 120
+        carbohydrateCount: 190,
+        lipidCount: 110
       }
     }
   ],
@@ -53,7 +53,7 @@ export const data: {
       },
       data: [
         {
-          value: 200,
+          value: 280,
           kind: 1
         },
         {
@@ -61,7 +61,7 @@ export const data: {
           kind: 2
         },
         {
-          value: 80,
+          value: 70,
           kind: 3
         },
         {
@@ -69,7 +69,7 @@ export const data: {
           kind: 4
         },
         {
-          value: 220,
+          value: 210,
           kind: 5
         },
         {
@@ -134,11 +134,11 @@ export const data: {
         },
         {
           day: 4,
-          sessionLength: 30
+          sessionLength: 60
         },
         {
           day: 5,
-          sessionLength: 30
+          sessionLength: 20
         },
         {
           day: 6,
@@ -146,7 +146,7 @@ export const data: {
         },
         {
           day: 7,
-          sessionLength: 50
+          sessionLength: 55
         }
       ]
     },
@@ -191,7 +191,7 @@ export const data: {
         {
           day: "2020-07-01",
           kilogram: 70,
-          calories: 240
+          calories: 270
         },
         {
           day: "2020-07-02",
@@ -200,18 +200,18 @@ export const data: {
         },
         {
           day: "2020-07-03",
-          kilogram: 70,
+          kilogram: 68,
           calories: 280
         },
         {
           day: "2020-07-04",
           kilogram: 70,
-          calories: 500
+          calories: 520
         },
         {
           day: "2020-07-05",
           kilogram: 69,
-          calories: 160
+          calories: 180
         },
         {
           day: "2020-07-06",
@@ -220,7 +220,7 @@ export const data: {
         },
         {
           day: "2020-07-07",
-          kilogram: 69,
+          kilogram: 71,
           calories: 390
         }
       ]
